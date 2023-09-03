@@ -1,11 +1,19 @@
 package homeWork;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class ReportPDF implements Report {
 
-  private final Document document;
-
-    public ReportPDF(Document document) {
+    public void setDocument(Document document) {
         this.document = document;
+    }
+
+    private  Document document;
+@Autowired
+    public ReportPDF() {
+        //this.document = document;
     }
 
 
@@ -16,7 +24,7 @@ public class ReportPDF implements Report {
 
     @Override
     public Report report(Document document) {
-        return new ReportPDF(document);
+        return new ReportPDF();
     }
 
     @Override

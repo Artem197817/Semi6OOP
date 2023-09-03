@@ -1,9 +1,13 @@
 package homeWork;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+//@Component
 public class ReportXML implements Report{
 
     private final Document document;
-
+    @Autowired
     public ReportXML(Document document) {
         this.document = document;
     }

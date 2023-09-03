@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bccd28cc-fbe3-4291-93e3-e7e7a9aabb2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeWork/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeWork/Report.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeWork/ReportEntrypoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeWork/ReportJSON.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeWork/ReportPDF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeWork/ReportXML.java" afterDir="false" />
+    <list default="true" id="bccd28cc-fbe3-4291-93e3-e7e7a9aabb2e" name="Changes" comment="Init">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeWork/ListReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeWork/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeWork/ReportConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeWork/ReportEntrypoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeWork/ReportEntrypoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeWork/ReportJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeWork/ReportJSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeWork/ReportPDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeWork/ReportPDF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeWork/ReportXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeWork/ReportXML.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +32,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -56,7 +56,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/artem/IdeaProjects/Spring3"
+    "last_opened_file_path": "/home/artem/архив/архив idea/work/IdeaProjects/Spring2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,6 +68,14 @@
       <option name="presentableId" value="Default" />
       <updated>1693575643254</updated>
     </task>
+    <task id="LOCAL-00001" summary="Init">
+      <created>1693586594735</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693586594735</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -80,5 +88,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init" />
   </component>
 </project>
