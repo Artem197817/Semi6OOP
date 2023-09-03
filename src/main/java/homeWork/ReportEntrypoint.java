@@ -12,7 +12,7 @@ public class ReportEntrypoint {
        reportMap = reportList.stream()
                .collect(Collectors.toMap(Report::keyReport, Function.identity()));
     }
-    public Report create(Document document , String reportType){
+    public Report create (Document document , String reportType){
         Report report = reportMap.get(reportType);
         if (reportType != null)
             return report.report(document);
