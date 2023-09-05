@@ -10,10 +10,10 @@ import java.util.stream.Collectors;
 @Component
 public class ReportEntrypoint {
     private final Map <String , Report> reportMap;
-    private ListReport listReport;
+
     @Autowired
-    public ReportEntrypoint(ListReport listReport) {
-        reportMap = (Map<String, Report>) listReport.getReportList().stream()
+    public ReportEntrypoint(List<Report> listReport) {
+        reportMap =  listReport.stream()
                .collect(Collectors.toMap(Report::keyReport, Function.identity()));
     }
     public Report create(Document document , String reportType){

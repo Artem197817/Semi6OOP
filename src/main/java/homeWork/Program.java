@@ -1,10 +1,6 @@
 package homeWork;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Program {
     public static void main(String[] args) {
         Document  document = new Document("Заявление","Прошу выдать мне премию");
