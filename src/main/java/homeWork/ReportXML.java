@@ -3,13 +3,17 @@ package homeWork;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class ReportXML implements Report{
 
-    private final Document document;
-    @Autowired
-    public ReportXML(Document document) {
+    public void setDocument(Document document) {
         this.document = document;
+    }
+
+    private  Document document;
+    @Autowired
+    public ReportXML() {
+        //this.document = document;
     }
 
     @Override
@@ -19,7 +23,9 @@ public class ReportXML implements Report{
 
     @Override
     public Report report(Document document) {
-        return new ReportXML(document);
+        ReportXML reportXML =  new ReportXML();
+        reportXML.setDocument(document);
+        return reportXML;
     }
 
     @Override

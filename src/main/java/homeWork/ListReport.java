@@ -6,14 +6,19 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-@Component
+//@Component
 public class ListReport {
-    public List reportList;
-@Autowired
-    public ListReport (){
-        this.reportList = new ArrayList<>((Collection) new ReportPDF());
-    }
 
+
+    public List<Report> reportList;
+
+
+    public ListReport (){;
+    }
+   // @Autowired
+    public void setReportList(List<Report> reportList) {
+        this.reportList = reportList;
+    }
     public List getReportList() {
         return reportList;
     }

@@ -6,11 +6,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class ReportPDF implements Report {
 
+
+
+    private  Document document;
     public void setDocument(Document document) {
         this.document = document;
     }
-
-    private  Document document;
 @Autowired
     public ReportPDF() {
         //this.document = document;
@@ -24,7 +25,9 @@ public class ReportPDF implements Report {
 
     @Override
     public Report report(Document document) {
-        return new ReportPDF();
+        ReportPDF reportPDF = new ReportPDF();
+        reportPDF.setDocument(document);
+        return reportPDF;
     }
 
     @Override

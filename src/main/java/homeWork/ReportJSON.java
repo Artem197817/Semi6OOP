@@ -2,13 +2,18 @@ package homeWork;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-//@Component
+@Component
 public class ReportJSON implements Report {
 
-    private final Document document;
-    @Autowired
-    public ReportJSON(Document document) {
+    private  Document document;
+
+    public void setDocument(Document document) {
         this.document = document;
+    }
+
+    @Autowired
+    public ReportJSON() {
+       // this.document = document;
     }
 
     @Override
@@ -18,7 +23,9 @@ public class ReportJSON implements Report {
 
     @Override
     public Report report(Document document) {
-        return new ReportJSON(document);
+        ReportJSON reportJSON = new ReportJSON();
+        reportJSON.setDocument(document);
+        return reportJSON;
     }
 
     @Override

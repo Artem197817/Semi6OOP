@@ -7,10 +7,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-//@Component
+@Component
 public class ReportEntrypoint {
     private final Map <String , Report> reportMap;
-
+    private ListReport listReport;
     @Autowired
     public ReportEntrypoint(ListReport listReport) {
         reportMap = (Map<String, Report>) listReport.getReportList().stream()
